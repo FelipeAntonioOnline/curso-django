@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+import os
 from decouple import config
 from pathlib import Path
 
@@ -19,6 +20,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
+if os.environ.get("SECRET_KEY", "") != "":
+    # HTTP Strict Transport Security - careful now
+    SECURE_HSTS_SECONDS = os.environ.get("SECURE_HSTS_SECONDS", 3600)
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+
+    # HTTPS redirects
+    SECURE_SSL_REDIRECT = True
+    SECURE_PROXY_SSL_HEADER = (
+        "HTTP_X_FORWARDED_PROTO",  # Heroku strips and sets X-Forwarded-Proto correctly
+        "https",
+    )
+
+    # Secure cookies
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+
+    # Only run in debug mode if local
+    DEBUG = False
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("SECRET_KEY")
 
