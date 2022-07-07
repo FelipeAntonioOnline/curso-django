@@ -41,8 +41,6 @@ if os.environ.get("SECRET_KEY", "") != "":
     # Only run in debug mode if local
     DEBUG = False
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
