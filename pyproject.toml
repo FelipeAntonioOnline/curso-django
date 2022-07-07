@@ -16,6 +16,7 @@ flake8 = "^4.0.1"
 pytest = "^7.1.2"
 coverage = "^6.4.1"
 pytest-cov = "^3.0.0"
+pytest-django = "^4.5.2"
 pytest-mock = "^3.8.2"
 Sphinx = "^5.0.2"
 python-decouple = "^3.6"
@@ -29,4 +30,5 @@ line-length = 120
 
 [tool.pytest.ini_options]
 minversion = "6.0"
+DJANGO_SETTINGS_MODULE = "pypro.settings"
 addopts = "-ra -q --doctest-modules"
