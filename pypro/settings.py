@@ -38,8 +38,8 @@ if os.environ.get("SECRET_KEY", "") != "":
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
 
-    # Only run in debug mode if local
-    DEBUG = False
+# Only run in debug mode if local
+DEBUG = os.environ
 
 
 ALLOWED_HOSTS = ["*"]
