@@ -124,6 +124,14 @@ tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.1
 toml = ["tomli"]
 
 [[package]]
+name = "dj-database-url"
+version = "0.5.0"
+description = "Use Database URLs in your Django Application."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "django"
 version = "4.0.6"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -139,19 +147,6 @@ tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 [package.extras]
 argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
-
-[[package]]
-name = "django-environ"
-version = "0.9.0"
-description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
-category = "main"
-optional = false
-python-versions = ">=3.4,<4"
-
-[package.extras]
-develop = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)", "furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
-docs = ["furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
-testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
 
 [[package]]
 name = "docutils"
@@ -402,6 +397,14 @@ pytest = ">=5.0"
 dev = ["pre-commit", "tox", "pytest-asyncio"]
 
 [[package]]
+name = "python-decouple"
+version = "3.6"
+description = "Strict separation of settings from code."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pytz"
 version = "2022.1"
 description = "World timezone definitions, modern and historical"
@@ -577,7 +580,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "32a3ec08061af7e967e2ed4757595b71ab418beb76c6283d11d1caaf14ff86a3"
+content-hash = "bd92f05616395eacfeb233df778def15e36bd5a3302515193faa6ef6202a7848"
 
 [metadata.files]
 alabaster = [
@@ -684,11 +687,11 @@ coverage = [
     {file = "coverage-6.4.1-pp36.pp37.pp38-none-any.whl", hash = "sha256:4803e7ccf93230accb928f3a68f00ffa80a88213af98ed338a57ad021ef06815"},
     {file = "coverage-6.4.1.tar.gz", hash = "sha256:4321f075095a096e70aff1d002030ee612b65a205a0a0f5b815280d5dc58100c"},
 ]
+dj-database-url = []
 django = [
     {file = "Django-4.0.6-py3-none-any.whl", hash = "sha256:ca54ebedfcbc60d191391efbf02ba68fb52165b8bf6ccd6fe71f098cac1fe59e"},
     {file = "Django-4.0.6.tar.gz", hash = "sha256:a67a793ff6827fd373555537dca0da293a63a316fe34cb7f367f898ccca3c3ae"},
 ]
-django-environ = []
 docutils = [
     {file = "docutils-0.18.1-py2.py3-none-any.whl", hash = "sha256:23010f129180089fbcd3bc08cfefccb3b890b0050e1ca00c867036e9d161b98c"},
     {file = "docutils-0.18.1.tar.gz", hash = "sha256:679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06"},
@@ -815,6 +818,10 @@ pytest-django = []
 pytest-mock = [
     {file = "pytest-mock-3.8.2.tar.gz", hash = "sha256:77f03f4554392558700295e05aed0b1096a20d4a60a4f3ddcde58b0c31c8fca2"},
     {file = "pytest_mock-3.8.2-py3-none-any.whl", hash = "sha256:8a9e226d6c0ef09fcf20c94eb3405c388af438a90f3e39687f84166da82d5948"},
+]
+python-decouple = [
+    {file = "python-decouple-3.6.tar.gz", hash = "sha256:2838cdf77a5cf127d7e8b339ce14c25bceb3af3e674e039d4901ba16359968c7"},
+    {file = "python_decouple-3.6-py3-none-any.whl", hash = "sha256:6cf502dc963a5c642ea5ead069847df3d916a6420cad5599185de6bab11d8c2e"},
 ]
 pytz = [
     {file = "pytz-2022.1-py2.py3-none-any.whl", hash = "sha256:e68985985296d9a66a881eb3193b0906246245294a881e7c8afe623866ac6a5c"},
