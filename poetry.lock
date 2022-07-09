@@ -124,6 +124,14 @@ tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.1
 toml = ["tomli"]
 
 [[package]]
+name = "dj-database-url"
+version = "0.5.0"
+description = "Use Database URLs in your Django Application."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "django"
 version = "4.0.6"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -572,7 +580,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "f7a7b4eb05de398bab4aeaa43d6c1825b8890a8138d3e7ea4923b1d4fdfdaab0"
+content-hash = "bd92f05616395eacfeb233df778def15e36bd5a3302515193faa6ef6202a7848"
 
 [metadata.files]
 alabaster = [
@@ -679,6 +687,7 @@ coverage = [
     {file = "coverage-6.4.1-pp36.pp37.pp38-none-any.whl", hash = "sha256:4803e7ccf93230accb928f3a68f00ffa80a88213af98ed338a57ad021ef06815"},
     {file = "coverage-6.4.1.tar.gz", hash = "sha256:4321f075095a096e70aff1d002030ee612b65a205a0a0f5b815280d5dc58100c"},
 ]
+dj-database-url = []
 django = [
     {file = "Django-4.0.6-py3-none-any.whl", hash = "sha256:ca54ebedfcbc60d191391efbf02ba68fb52165b8bf6ccd6fe71f098cac1fe59e"},
     {file = "Django-4.0.6.tar.gz", hash = "sha256:a67a793ff6827fd373555537dca0da293a63a316fe34cb7f367f898ccca3c3ae"},
