@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import Csv, config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,29 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ
-if os.environ.get("SECRET_KEY", "") != "":
-    # HTTP Strict Transport Security - careful now
-    SECURE_HSTS_SECONDS = os.environ.get("SECURE_HSTS_SECONDS", 3600)
-    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-    SECURE_HSTS_PRELOAD = True
-
-    # HTTPS redirects
-    SECURE_SSL_REDIRECT = True
-    SECURE_PROXY_SSL_HEADER = (
-        "HTTP_X_FORWARDED_PROTO",  # Heroku strips and sets X-Forwarded-Proto correctly
-        "https",
-    )
-
-    # Secure cookies
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
+SECRET_KEY = config("SECRET_KEY")
 
 # Only run in debug mode if local
-DEBUG = os.environ
+DEBUG = config("DEBUG")
 
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 
 
 # Application definition
