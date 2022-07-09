@@ -5,3 +5,13 @@ repos:
       - id: ggshield
         language_version: python3
         stages: [commit]
+
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        args: ["--profile", "black", "--filter-files"]
+        stages: [commit]
+        language: system
+        entry: isort
+        types: [python]
