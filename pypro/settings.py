@@ -31,8 +31,9 @@ SECRET_KEY = config("SECRET_KEY")
 # Only run in debug mode if local
 DEBUG = config("DEBUG")
 
-
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
+
+AUTH_USER_MODEL = "base.User"
 
 
 # Application definition
