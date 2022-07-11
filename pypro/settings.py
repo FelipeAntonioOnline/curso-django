@@ -128,6 +128,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
+COLLECTFAST_ENABLED = False
+COLLECTFAST_DEBUG = False
+
 # STORAGE CONFIGURATION IN S3 AWS
 if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
     AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
@@ -140,7 +143,9 @@ if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
     AWS_DEFAULT_ACL = "private"
 
     # Static Assets
-    STATICFILES_STORAGE = "s3_folder_storage.s3.StaticStorage"
+    COLLECTFAST_ENABLED = True
+    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
     STATIC_S3_PATH = "static"
     STATIC_ROOT = f"/{STATIC_S3_PATH}/"
     STAIC_URL = f"//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/"
