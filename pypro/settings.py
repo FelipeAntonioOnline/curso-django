@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "collectfast",
     "django.contrib.staticfiles",
     "pypro.base.apps",
 ]
@@ -129,8 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
-COLLECTFAST_ENABLED = False
-
 # STORAGE CONFIGURATION IN S3 AWS
 if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
     AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
@@ -141,10 +138,6 @@ if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
     AWS_OVERWRITE_ATUH = True
     AWS_S3_CUSTOM_DOMAIN = None
     AWS_DEFAULT_ACL = "private"
-
-    COLLECTFAST_ENABLED = True
-    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
     # Static Assets
     STATICFILES_STORAGE = "s3_folder_storage.s3.StaticStorage"
