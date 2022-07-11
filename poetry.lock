@@ -150,6 +150,19 @@ python-versions = ">=3.6"
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
+name = "collectfast"
+version = "2.2.0"
+description = "A Faster Collectstatic"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
+django-storages = ">=1.6"
+typing-extensions = "*"
+
+[[package]]
 name = "colorama"
 version = "0.4.5"
 description = "Cross-platform colored terminal text."
@@ -839,6 +852,14 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "typing-extensions"
+version = "4.3.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
 name = "tzdata"
 version = "2022.1"
 description = "Provider of IANA time zone data"
@@ -880,7 +901,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "481eb8c448f0e50ce89145c7c6c027a99da1ac950aaf91b4c61da8ceaeb7b60a"
+content-hash = "b278c7fc959ee37f747f3b5936bc89ced2417f199918f9321da987eafe9f2ce9"
 
 [metadata.files]
 alabaster = [
@@ -941,6 +962,7 @@ charset-normalizer = [
     {file = "charset_normalizer-2.1.0-py3-none-any.whl", hash = "sha256:5189b6f22b01957427f35b6a08d9a0bc45b46d3788ef5a92e978433c7a35f8a5"},
 ]
 click = []
+collectfast = []
 colorama = [
     {file = "colorama-0.4.5-py2.py3-none-any.whl", hash = "sha256:854bf444933e37f5824ae7bfc1e98d5bce2ebe4160d46b5edf346a89358e99da"},
     {file = "colorama-0.4.5.tar.gz", hash = "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"},
@@ -1192,6 +1214,7 @@ tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
+typing-extensions = []
 tzdata = [
     {file = "tzdata-2022.1-py2.py3-none-any.whl", hash = "sha256:238e70234214138ed7b4e8a0fab0e5e13872edab3be586ab8198c407620e2ab9"},
     {file = "tzdata-2022.1.tar.gz", hash = "sha256:8b536a8ec63dc0751342b3984193a3118f8fca2afe25752bb9b7fffd398552d3"},
