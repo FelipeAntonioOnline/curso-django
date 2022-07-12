@@ -38,5 +38,5 @@ line-length = 120
 [tool.pytest.ini_options]
 minversion = "6.0"
 DJANGO_SETTINGS_MODULE = "pypro.settings"
-pythonpath = "pypro"
+pythonpath = "pypro base tests"
 addopts = "-ra -q --doctest-modules"
