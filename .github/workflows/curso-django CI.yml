@@ -57,7 +57,7 @@ jobs:
         run: poetry install --no-interaction
 
       - name: Create .env
-        run: cp contrib/env-sample .env
+        run: cp pypro/contrib/env-sample pypro/.env
 
       - name: Setup PostgreSQL
         uses: Harmon758/postgresql-action@v1.0.0
