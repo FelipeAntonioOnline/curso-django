@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # Only run in debug mode if local
-DEBUG = config("DEBUG")
+DEBUG = config("DEBUG", cast=bool)
 
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 
@@ -133,7 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 COLLECTFAST_ENABLED = False
 
 # STORAGE CONFIGURATION IN S3 AWS
-if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
+if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):  # pragma: no cover
     AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
     AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
     AWS_OBJECT_PARAMETERS = {"CacheControl": "max-age=86400"}
