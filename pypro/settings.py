@@ -47,9 +47,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "collectfast",
     "django.contrib.staticfiles",
+    "debug_toolbar",
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -79,6 +81,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "pypro.wsgi.application"
 
+INTERNAL_IPS = config("INTERNAL_IPS", cast=Csv(), default="127.0.0.1")
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
