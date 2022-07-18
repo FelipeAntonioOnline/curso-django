@@ -131,7 +131,6 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
 COLLECTFAST_ENABLED = False
-COLLECTFAST_DEBUG = False
 
 # STORAGE CONFIGURATION IN S3 AWS
 if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
@@ -140,7 +139,7 @@ if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
     AWS_OBJECT_PARAMETERS = {"CacheControl": "max-age=86400"}
     AWS_PRELOAD_METADATA = True
     AWS_AUTO_CREATE_BUCKET = False
-    AWS_OVERWRITE_ATUH = True
+    AWS_OVERWRITE_AUTH = True
     AWS_S3_CUSTOM_DOMAIN = None
     AWS_DEFAULT_ACL = "private"
 
@@ -150,14 +149,14 @@ if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):
     COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
     STATIC_S3_PATH = "static"
     STATIC_ROOT = f"/{STATIC_S3_PATH}/"
-    STAIC_URL = f"//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/"
+    STATIC_URL = f"//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/"
     ADMIN_MEDIA_PREFIX = f"{STATIC_URL}admin/"
 
     # Upload Media Folder
     DEFAULT_FILE_STORAGE = "s3_folder_storage.DefaultStorage"
     DEFAULT_S3_PATH = "media"
     MEDIA_ROOT = f"/{DEFAULT_S3_PATH}/"
-    MEIDA_URL = f"//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/"
+    MEDIA_URL = f"//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/"
 
     INSTALLED_APPS.extend(("s3_folder_storage", "storages"))
 # Default primary key field type
