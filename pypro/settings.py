@@ -165,7 +165,7 @@ if AWS_ACCESS_KEY_ID := config("AWS_ACCESS_KEY_ID"):  # pragma: no cover
 
     INSTALLED_APPS.extend(("s3_folder_storage", "storages"))
 
-if SENTRY_DSN := config("SENTRY_DSN", default=None):
+if SENTRY_DSN := config("SENTRY_DSN", default=None):  # pragma: no cover
     sentry_sdk.init(
         dsn=SENTRY_DSN,
         integrations=[
