@@ -5,7 +5,7 @@ from django_assertions import assert_contains
 
 @pytest.fixture
 def resp(client):
-    return client.get(reverse("home"))
+    return client.get(reverse("base:home"))
 
 
 def test_status_code(resp):
@@ -17,4 +17,4 @@ def test_title(resp):
 
 
 def test_home_link(resp):
-    assert_contains(resp, f"""href="{reverse("home")}">Python Pro</a>""")
+    assert_contains(resp, f"""href="{reverse("base:home")}">Python Pro</a>""")
