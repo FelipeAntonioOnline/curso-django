@@ -30,24 +30,26 @@
               <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
             </div>
           </nav>
+          {% block content %} {% endblock %}
         </div>
       </div>
     </div>
-    {% block content %} {% endblock %}
-    <footer class="container main-footer mt-5 pt-3">
-      <div class="row">
-        <div class="col">
-          <h3>Entre Em Contato</h3>
-          <address>
-            +55 12 997-411-855
-            <br />
-            <a href="mailto:ramalho@python.pro.br">ramalho@python.pro.br</a>
-          </address>
-        </div>
-      </div>
-      <div class="container">
+    <footer class="container mt-2 pb-3">
+      <div class="main-footer">
         <div class="row">
-          <div class="col rights py-2">{% now 'Y' %} Python Pro. Todos os direitos reservados.</div>
+          <div class="col mx-2">
+            <h3>Entre Em Contato</h3>
+            <address>
+              +55 12 997-411-855
+              <br />
+              <a href="mailto:ramalho@python.pro.br">ramalho@python.pro.br</a>
+            </address>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col rights p-2 m-2">{% now 'Y' %} Python Pro. Todos os direitos reservados.</div>
+          </div>
         </div>
       </div>
     </footer>
