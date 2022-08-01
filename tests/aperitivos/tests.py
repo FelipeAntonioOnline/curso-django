@@ -16,5 +16,5 @@ def test_titulo_video(resp):
     assert_contains(resp, "<title>Vídeo Aperitivo: 7lions</title>")
 
 
-def test_titulo_video(resp):
+def test_iframe_video(resp):
     assert_contains(resp, 'src="https://player.vimeo.com/video/735480456')
