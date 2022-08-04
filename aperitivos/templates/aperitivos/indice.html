@@ -1,16 +1,22 @@
-{% extends "base.html" %} {% block title %}Videos Aperitivo{% endblock %} {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>{{video.titulo | default:"Lista De Videos Aperitivo"}}</h1>
-      <ol>
-        {% for video in videos %}
-        <li>{{ video.titulo | default:"Video Aperitivo" }}</li>
-        {% empty %}
-        <li>Não foi encontrado nenhum video de aperitivo.</li>
-        {% endfor %}
-      </ol>
+{% extends "base.html" %}
+{% block title %}
+  Videos Aperitivo
+{% endblock title %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ video.titulo | default:"Lista De Videos Aperitivo" }}</h1>
+        <ol>
+          {% for video in videos %}
+            <li>
+              <a href="{{ video.get_absolute_url }}">{{ video.titulo | default:"Video Aperitivo" }}</a>
+            </li>
+          {% empty %}
+            <li>Não foi encontrado nenhum video de aperitivo.</li>
+          {% endfor %}
+        </ol>
+      </div>
     </div>
   </div>
-</div>
-{% endblock %}
+{% endblock content %}
