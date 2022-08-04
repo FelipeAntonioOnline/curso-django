@@ -21,3 +21,10 @@ def test_home_link(resp):
         resp,
         f"""<a class="navbar-brand" href="{reverse("base:home")}">Python Pro</a>""",
     )
+
+
+def test_email_link(resp):
+    assert_contains(
+        resp,
+        'href="mailto:ramalho@python.pro.br"',
+    )
