@@ -278,7 +278,7 @@ sftp = ["paramiko"]
 
 [[package]]
 name = "djlint"
-version = "1.9.4"
+version = "1.11.1"
 description = "HTML Template Linter and Formatter"
 category = "dev"
 optional = false
@@ -1108,7 +1108,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "f1f0a160d484cc9f66c409ce9897bde84666f74a9e7e0faeca1e4afa39628779"
+content-hash = "af4008ae372aebdb075bb7cc976f0918ecb739a607933a8e150aa449c551737a"
 
 [metadata.files]
 alabaster = [
@@ -1270,8 +1270,8 @@ django-storages = [
     {file = "django_storages-1.13-py3-none-any.whl", hash = "sha256:3ef9dd5a2ac7221b571aa32f72a94a542b6b03fbd393e1c18e64d2a4006bfddf"},
 ]
 djlint = [
-    {file = "djlint-1.9.4-py3-none-any.whl", hash = "sha256:35070a7a2a12eeaeeb8c1a88973bebc4bb2a48f74a2b88479fca30f031a0a478"},
-    {file = "djlint-1.9.4.tar.gz", hash = "sha256:f88e50541439bbe15bcfff3577f15b45e4d4699942af25a88ecbe83839ccecfc"},
+    {file = "djlint-1.11.1-py3-none-any.whl", hash = "sha256:f4d677958a9ae475c89cc0694503de657a0142c77d33cddc02d72588f2601fc4"},
+    {file = "djlint-1.11.1.tar.gz", hash = "sha256:9fbe26f3d6ceb34da865d651aa497e063dba46fbfaffd31bd148e2d7295f23a9"},
 ]
 docutils = [
     {file = "docutils-0.19-py3-none-any.whl", hash = "sha256:5e1de4d849fee02c63b040a4a3fd567f4ab104defd8a5511fbbc24a8a017efbc"},
