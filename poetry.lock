@@ -341,7 +341,7 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "ggshield"
-version = "1.13.0"
+version = "1.13.2"
 description = "Detect secrets from all sources using GitGuardian's brains"
 category = "dev"
 optional = false
@@ -353,7 +353,7 @@ click = ">=8.0,<8.1"
 marshmallow = ">=3.15.0,<3.16.0"
 marshmallow-dataclass = ">=8.5.8,<8.6.0"
 oauthlib = ">=3.2,<3.3"
-pygitguardian = ">=1.3.4,<1.4.0"
+pygitguardian = ">=1.3.5,<1.4.0"
 python-dotenv = ">=0.19.1,<0.20.0"
 pyyaml = ">=6.0,<6.1"
 
@@ -1108,7 +1108,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "6d2211908ae2e8c3e46d1545260f5e92a962ffb44e19fffaf0a49ef86d30f2be"
+content-hash = "51eefb81e05b5967a31a21073c7426e3e6c2419c3cfa0a68cf032b8671f83cb5"
 
 [metadata.files]
 alabaster = [
@@ -1290,8 +1290,8 @@ flake8 = [
     {file = "flake8-5.0.4.tar.gz", hash = "sha256:6fbe320aad8d6b95cec8b8e47bc933004678dc63095be98528b7bdd2a9f510db"},
 ]
 ggshield = [
-    {file = "ggshield-1.13.0-py3-none-any.whl", hash = "sha256:f831250cb6cdede691b7a8e4bededba6a51a69fa67900a6ddc473b1d0d7d3b00"},
-    {file = "ggshield-1.13.0.tar.gz", hash = "sha256:61b5151f0fa24fb8ce3febbb7c192ca61cb48bee42255b4de52269f9da98a688"},
+    {file = "ggshield-1.13.2-py3-none-any.whl", hash = "sha256:8e8c705d01d66e2a1a0e0b41868c41020829c5bdf9807235f23683645fa94119"},
+    {file = "ggshield-1.13.2.tar.gz", hash = "sha256:60daaab6ef488fa97a4b720bcc63a1171a20a234621381d2c06e6fc6bb27bcaf"},
 ]
 gunicorn = [
     {file = "gunicorn-20.1.0-py3-none-any.whl", hash = "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"},
