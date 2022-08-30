@@ -540,6 +540,17 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "model-mommy"
+version = "2.0.0"
+description = "Smart object creation facility for Django."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+django = ">=1.11.0"
+
+[[package]]
 name = "mypy-extensions"
 version = "0.4.3"
 description = "Experimental type system extensions for programs checked with the mypy typechecker."
@@ -1111,7 +1122,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "51eefb81e05b5967a31a21073c7426e3e6c2419c3cfa0a68cf032b8671f83cb5"
+content-hash = "5deec7c7f9d98fdf66a1cdb207e62193d64ece11f480fb2d3b6aca0ad1619a64"
 
 [metadata.files]
 alabaster = [
@@ -1396,6 +1407,10 @@ marshmallow-dataclass = [
 mccabe = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
     {file = "mccabe-0.7.0.tar.gz", hash = "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325"},
+]
+model-mommy = [
+    {file = "model_mommy-2.0.0-py2.py3-none-any.whl", hash = "sha256:40d6e740aad7509e696a324b94cf2b0a104da93c3d4a7924cea1be3d0eb95b4f"},
+    {file = "model_mommy-2.0.0.tar.gz", hash = "sha256:3d332afce941c57f1990f45b083ba13252ba74fcd1ae43fd047e5af7a70fb312"},
 ]
 mypy-extensions = [
     {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
