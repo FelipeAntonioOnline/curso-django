@@ -1,11 +1,13 @@
 databases:
   - name: cursodjango
+    plan: free
     databaseName: cursodjango
     user: cursodjango
 
 services:
   - type: web
     name: cursodjango
+    plan: free
     env: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn mysite.wsgi:application"
