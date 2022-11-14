@@ -10,7 +10,7 @@ services:
     plan: free
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn cursodjango.wsgi:application"
+    startCommand: "gunicorn pypro.wsgi:application"
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.5
