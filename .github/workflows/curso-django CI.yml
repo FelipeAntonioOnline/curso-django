@@ -35,7 +35,7 @@ jobs:
         run: docker-compose up -d
 
       - name: Install dev dependencies
-        run: docker-compose run --rm web poetry install --no-interaction --no-root --dev
+        run: docker-compose run --rm web poetry install --no-interaction --no-root --only dev
 
       - name: Lint with Flake8
         run: |
