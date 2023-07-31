@@ -19,7 +19,7 @@ whitenoise = "^6.5.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"
-flake8 = "^6.0.0"
+flake8 = "^6.1.0"
 pytest = "^7.4.0"
 coverage = "^7.2.7"
 pytest-cov = "^4.1.0"
