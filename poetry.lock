@@ -841,13 +841,13 @@ files = [
 
 [[package]]
 name = "model-bakery"
-version = "1.12.0"
+version = "1.13.0"
 description = "Smart object creation facility for Django."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "model_bakery-1.12.0-py3-none-any.whl", hash = "sha256:70e991dd503e3f1956632c621946bb8e71012172db740bab75cd9d2a447283a3"},
-    {file = "model_bakery-1.12.0.tar.gz", hash = "sha256:bfa5d118f91f08ef4694d4aaab168c98efc91dab086aee587e71d66a7001701a"},
+    {file = "model_bakery-1.13.0-py3-none-any.whl", hash = "sha256:0f54a4548722ecee0183d82eabe1adf8f74303e6ce08705cfe228a96ef3bb7d9"},
+    {file = "model_bakery-1.13.0.tar.gz", hash = "sha256:dba7444c9593261b12dcb21f8f9e1ba668fafc70804f15dfd6aa208b9e3f558f"},
 ]
 
 [package.dependencies]
@@ -1746,4 +1746,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "78618a7821723569a7823ad8df70b38ee270f8292b558bf955c4981d6c0316e2"
+content-hash = "9b7bae3c79b988c09e8b939fe51ef622de8956034ef343be040592b0d66a4f41"
