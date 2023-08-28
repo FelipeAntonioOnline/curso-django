@@ -650,13 +650,13 @@ pyflakes = ">=3.1.0,<3.2.0"
 
 [[package]]
 name = "ggshield"
-version = "1.18.0"
+version = "1.18.1"
 description = "Detect secrets from all sources using GitGuardian's brains"
 optional = false
 python-versions = "*"
 files = [
-    {file = "ggshield-1.18.0-py3-none-any.whl", hash = "sha256:239c88965bbad5fab4b16cf449d84be0990d41be8fac45e226923286809bd768"},
-    {file = "ggshield-1.18.0.tar.gz", hash = "sha256:478dae8af0952f1e3737157ddc7534a7bdc20e64996198a5d6692057a272a520"},
+    {file = "ggshield-1.18.1-py3-none-any.whl", hash = "sha256:65b37688655b8945c895dea1f3ca43e7b0f097370b70f835f61467efd3233d32"},
+    {file = "ggshield-1.18.1.tar.gz", hash = "sha256:62a719947d2bf6c8e1f9c92c033fe8cbfe7b7d527cc252eedaffd91c77d63b84"},
 ]
 
 [package.dependencies]
@@ -1880,4 +1880,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "483bd8a0a13bed52dfe578587a7740bfb02e3a8e00a5a5bc03e09102290ebb1c"
+content-hash = "7981cbc1e903da66658afe8081fcae9711ccb79e5f26ff4511c3f0af957f7a5e"
