@@ -573,13 +573,13 @@ sftp = ["paramiko (>=1.10.0)"]
 
 [[package]]
 name = "djlint"
-version = "1.32.1"
+version = "1.33.0"
 description = "HTML Template Linter and Formatter"
 optional = false
 python-versions = ">=3.8.0,<4.0.0"
 files = [
-    {file = "djlint-1.32.1-py3-none-any.whl", hash = "sha256:8aaec6776376cfd41f3e742ed9f5e3c46dc7c6cd7646abf9e99860fb1ec9f19a"},
-    {file = "djlint-1.32.1.tar.gz", hash = "sha256:c1e2141acf1547d244af7ef8abd15fbbae2abcc7a03e2bf31f8a491de69a6c72"},
+    {file = "djlint-1.33.0-py3-none-any.whl", hash = "sha256:aaf7bcbcfe937de5ff52747b573a8c78146b739d058dc817350640206aa477cc"},
+    {file = "djlint-1.33.0.tar.gz", hash = "sha256:427e1d0b1cf2dc1922808d27d5a1078369d0c05b0fd2267f0bef06e9049bf3cf"},
 ]
 
 [package.dependencies]
@@ -1894,4 +1894,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "cfeb0eaaed5a478ded5a5522f02ef7a6eead3da2f10b294be5c4b8ce9a9bbac9"
+content-hash = "a557fb91dbdab1854c3788fab20edd2feb1f512ee35be182ce02d26fae644dde"
