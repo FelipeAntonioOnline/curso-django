@@ -646,13 +646,13 @@ pyflakes = ">=3.1.0,<3.2.0"
 
 [[package]]
 name = "ggshield"
-version = "1.19.1"
+version = "1.21.0"
 description = "Detect secrets from all sources using GitGuardian's brains"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "ggshield-1.19.1-py3-none-any.whl", hash = "sha256:af809182b125062cc9b0e7c79845572e43e96fd60c1d7defe6f9ce4a860f831c"},
-    {file = "ggshield-1.19.1.tar.gz", hash = "sha256:5e6059a97b2e567e4f1f9e874e2791e4c6116ba8e9e9bf8787f07b16c49587f3"},
+    {file = "ggshield-1.21.0-py3-none-any.whl", hash = "sha256:7d39c6df359b8c28596a638b8bd1cdabda133cf2b98117aa37d0daa1cf3113f2"},
+    {file = "ggshield-1.21.0.tar.gz", hash = "sha256:fea9045bff7c7143696f05598fb328588737baeaacc3f2aced44bbf4a3fd6207"},
 ]
 
 [package.dependencies]
@@ -663,7 +663,7 @@ cryptography = ">=41.0.3,<42.0.0"
 marshmallow = ">=3.18.0,<3.19.0"
 marshmallow-dataclass = ">=8.5.8,<8.6.0"
 oauthlib = ">=3.2.1,<3.3.0"
-pygitguardian = ">=1.10.0,<1.11.0"
+pygitguardian = ">=1.11.0,<1.12.0"
 pyjwt = ">=2.6.0,<2.7.0"
 python-dotenv = ">=0.21.0,<0.22.0"
 pyyaml = ">=6.0.1,<6.1"
@@ -1117,6 +1117,7 @@ files = [
     {file = "psycopg2_binary-2.9.9-cp311-cp311-win32.whl", hash = "sha256:dc4926288b2a3e9fd7b50dc6a1909a13bbdadfc67d93f3374d984e56f885579d"},
     {file = "psycopg2_binary-2.9.9-cp311-cp311-win_amd64.whl", hash = "sha256:b76bedd166805480ab069612119ea636f5ab8f8771e640ae103e05a4aae3e417"},
     {file = "psycopg2_binary-2.9.9-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:8532fd6e6e2dc57bcb3bc90b079c60de896d2128c5d9d6f24a63875a95a088cf"},
+    {file = "psycopg2_binary-2.9.9-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b0605eaed3eb239e87df0d5e3c6489daae3f7388d455d0c0b4df899519c6a38d"},
     {file = "psycopg2_binary-2.9.9-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8f8544b092a29a6ddd72f3556a9fcf249ec412e10ad28be6a0c0d948924f2212"},
     {file = "psycopg2_binary-2.9.9-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2d423c8d8a3c82d08fe8af900ad5b613ce3632a1249fd6a223941d0735fce493"},
     {file = "psycopg2_binary-2.9.9-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:2e5afae772c00980525f6d6ecf7cbca55676296b580c0e6abb407f15f3706996"},
@@ -1125,6 +1126,8 @@ files = [
     {file = "psycopg2_binary-2.9.9-cp312-cp312-musllinux_1_1_i686.whl", hash = "sha256:cb16c65dcb648d0a43a2521f2f0a2300f40639f6f8c1ecbc662141e4e3e1ee07"},
     {file = "psycopg2_binary-2.9.9-cp312-cp312-musllinux_1_1_ppc64le.whl", hash = "sha256:911dda9c487075abd54e644ccdf5e5c16773470a6a5d3826fda76699410066fb"},
     {file = "psycopg2_binary-2.9.9-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:57fede879f08d23c85140a360c6a77709113efd1c993923c59fde17aa27599fe"},
+    {file = "psycopg2_binary-2.9.9-cp312-cp312-win32.whl", hash = "sha256:64cf30263844fa208851ebb13b0732ce674d8ec6a0c86a4e160495d299ba3c93"},
+    {file = "psycopg2_binary-2.9.9-cp312-cp312-win_amd64.whl", hash = "sha256:81ff62668af011f9a48787564ab7eded4e9fb17a4a6a74af5ffa6a457400d2ab"},
     {file = "psycopg2_binary-2.9.9-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:2293b001e319ab0d869d660a704942c9e2cce19745262a8aba2115ef41a0a42a"},
     {file = "psycopg2_binary-2.9.9-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:03ef7df18daf2c4c07e2695e8cfd5ee7f748a1d54d802330985a78d2a5a6dca9"},
     {file = "psycopg2_binary-2.9.9-cp37-cp37m-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:0a602ea5aff39bb9fac6308e9c9d82b9a35c2bf288e184a816002c9fae930b77"},
@@ -1197,13 +1200,13 @@ files = [
 
 [[package]]
 name = "pygitguardian"
-version = "1.10.0"
+version = "1.11.0"
 description = "Python Wrapper for GitGuardian's API -- Scan security policy breaks everywhere"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pygitguardian-1.10.0-py3-none-any.whl", hash = "sha256:76ea3cb2069b511c3ffe8445fbac4c050f08073844a7b5fbecbda91d20349cb1"},
-    {file = "pygitguardian-1.10.0.tar.gz", hash = "sha256:b9bee1170e13c322179dc2f8ab27aee2a046f459047b47d3edee850c5930192c"},
+    {file = "pygitguardian-1.11.0-py3-none-any.whl", hash = "sha256:f8ecdb6550610c0638d5c6ebb4f1ee626742171bd0bba1251aa4595f6cbdba1d"},
+    {file = "pygitguardian-1.11.0.tar.gz", hash = "sha256:6f1b9c1e9628032ef620d7c8440ee5a3cfd7f00f79bce02d9c609dcac6abd776"},
 ]
 
 [package.dependencies]
@@ -1902,4 +1905,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4382d6fde2496c20c35f11c9583ac8658b96eaa73eee5c792d91d3c474dcee12"
+content-hash = "d5bab2a7120e155e1d55aa98f2f76826650b07ae39a3814fbfe252a04b8f72b3"
